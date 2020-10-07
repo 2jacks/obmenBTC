@@ -1,0 +1,30 @@
+.guaranties {
+  @include section-m();
+
+  &__header {
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    @include plain-text();
+    margin-bottom: 60px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 40px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
+  }
+  &__certificates {
+    picture {
+      img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+    }
+  }
+}

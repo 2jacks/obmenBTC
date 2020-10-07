@@ -1,0 +1,36 @@
+.footer {
+  @include section-m();
+  padding: 42px 0;
+  @include media-breakpoint-down(md) {
+    padding: 36px 0;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0;
+  }
+  @include footer-gradient();
+  &__nav {
+    margin-bottom: 16px;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: center;
+      .nav__link {
+        margin-right: 0;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+  &__copyright {
+    margin-left: 30px;
+    @include media-breakpoint-down(sm) {
+      margin-top: 30px;
+      margin-left: 0;
+    }
+  }
+}

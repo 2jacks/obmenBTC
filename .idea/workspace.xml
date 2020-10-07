@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ecec30b-4450-4e80-87b8-d919899d79bd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1he5upwhfVEBl1WN0FpLkSwBSpr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/#src/scss/components" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebDev\projects\obmenbtc\#src\js\libs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebDev\projects\obmenbtc\#src\scss\components" />
+      <recent name="D:\WebDev\projects\obmenbtc\#src\js" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ecec30b-4450-4e80-87b8-d919899d79bd" name="Default Changelist" comment="" />
+      <created>1600358943020</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600358943020</updated>
+      <workItem from="1600358945667" duration="3156000" />
+      <workItem from="1600411179015" duration="1240000" />
+      <workItem from="1600507294170" duration="7860000" />
+      <workItem from="1600518730525" duration="446000" />
+      <workItem from="1600581951488" duration="11895000" />
+      <workItem from="1600666403978" duration="9323000" />
+      <workItem from="1600689227038" duration="27000" />
+      <workItem from="1600698195938" duration="924000" />
+      <workItem from="1600749903662" duration="25000" />
+      <workItem from="1600925132574" duration="11532000" />
+      <workItem from="1601012992890" duration="2652000" />
+      <workItem from="1601109460080" duration="6507000" />
+      <workItem from="1601204364622" duration="483000" />
+      <workItem from="1601702453892" duration="13352000" />
+      <workItem from="1601879400543" duration="4729000" />
+      <workItem from="1601884361979" duration="1468000" />
+      <workItem from="1601886912305" duration="8903000" />
+      <workItem from="1601909095640" duration="817000" />
+      <workItem from="1601911393382" duration="952000" />
+      <workItem from="1601981055191" duration="6777000" />
+      <workItem from="1602072303890" duration="6952000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="722" y="309" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601708898486">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="722" y="309" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601708898486" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1601204846530">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1601204846530" />
+    <state width="1899" height="261" key="GridCell.Tab.0.bottom" timestamp="1600359369495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600359369495" />
+    <state width="1899" height="261" key="GridCell.Tab.0.center" timestamp="1600359369495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600359369495" />
+    <state width="1899" height="261" key="GridCell.Tab.0.left" timestamp="1600359369495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600359369495" />
+    <state width="1899" height="261" key="GridCell.Tab.0.right" timestamp="1600359369495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600359369495" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1601883320864">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601883320864" />
+    <state x="639" y="238" width="642" height="564" key="find.popup" timestamp="1600361744783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="639" y="238" width="642" height="564" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600361744783" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1600668304910">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600668304910" />
+  </component>
+</project>

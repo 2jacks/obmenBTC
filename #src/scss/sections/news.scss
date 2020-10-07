@@ -1,0 +1,250 @@
+.news {
+  &-page {
+    background: linear-gradient(0deg, rgba(13, 56, 126, 0.08), rgba(250, 250, 250, 0));
+
+  }
+  &__support {
+    margin-top: 70px;
+  }
+  background: url("../img/news/news-bg.svg") center no-repeat;
+  background-size: cover;
+  padding-top: 260px;
+  padding-bottom: 200px;
+
+  position: relative;
+  @include media-breakpoint-down(md) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-top: 90px;
+    padding-bottom: 59px;
+  }
+}
+.owl {
+  &-prev, &-next {
+    span {
+      display: none;
+    }
+    border: none;
+
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: url("../img/news/slider-arrow.svg") center no-repeat;
+    background-size: contain;
+  }
+  &-next {
+    transform: rotate(180deg);
+  }
+
+  &-item {
+    height: 330px;
+  }
+}
+.news-slider {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 72%;
+  margin-left: -15px;
+  @include media-breakpoint-down(md) {
+    position: relative;
+    transform: none;
+    margin-top: 40px;
+    width: 100%;
+  }
+  &__next {
+    transform: rotate(180deg);
+    margin-left: 30px;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+  &__buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+  }
+  &__item-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__img {
+    width: 100%;
+    height: 200px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__info {
+    height: 100%;
+    padding: 17px 14px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__title {
+    @include medium-font();
+    font-size: 18px;
+    color: $darkestblue;
+
+  }
+  &__date {
+    @include light-font();
+    font-size: 14px;
+    color: $darkestblue;
+    opacity: .5;
+
+    &::before{
+      content: '';
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: $darkestblue;
+      opacity: .2;
+
+      margin: 13px 0;
+    }
+  }
+}
+.popular {
+  @include section-m();
+
+  &__secondary {
+    @include media-breakpoint-down(lg) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+  &__article {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    &--short {
+      margin-bottom: 30px;
+      .popular__img {
+        width: auto;
+      }
+      .popular__info {
+        width: auto;
+
+      }
+      .popular__title {
+        margin-bottom: 0;
+      }
+      @include media-breakpoint-down(lg) {
+        width: 46%;
+      }
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+  }
+  &__img {
+    min-width: 110px;
+    width: 50%;
+    margin-right: 35px;
+    position: relative;
+    overflow: hidden;
+    @include media-breakpoint-down(sm) {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  &__picture {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    @include media-breakpoint-down(sm) {
+      width: auto;
+    }
+  }
+  &__title {
+    @include medium-font();
+    font-size: 18px;
+    color: $darkestblue;
+    text-decoration: none;
+
+    z-index: 1;
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+    }
+
+  }
+  &__text {
+    @include light-font();
+    font-size: 15px;
+    color: $darkestblue;
+
+    position: relative;
+    z-index: -1;
+    flex-grow: 1;
+
+    margin: 30px 0 ;
+    @include media-breakpoint-down(lg) {
+      margin: 20px 0;
+    }
+    @include media-breakpoint-down(md) {
+      margin: 10px 0;
+    }
+    @include media-breakpoint-down(sm) {
+      margin: 0;
+      display: none;
+    }
+  }
+  &__date {
+    @include light-font();
+    font-size: 14px;
+    color: $darkestblue;
+    opacity: .5;
+    line-height: 2;
+    z-index: 200;
+
+
+    &::before{
+      content: '';
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: $darkestblue;
+      opacity: .2;
+
+      margin: 10px 0 8px 0;
+    }
+  }
+}

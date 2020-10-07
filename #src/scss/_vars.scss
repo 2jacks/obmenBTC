@@ -1,0 +1,54 @@
+//Colors
+$darkestblue: rgba(10, 29, 65, 1);
+$darkblue: rgba(14, 41, 92, 1);
+$blue: rgb(32, 72, 136);
+$lightblue: rgb(23, 109, 174);
+$lightestblue: rgb(6, 170, 236);
+
+//Utility
+$transition: .1s linear;
+
+//Mixins
+@mixin light-font {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+@mixin reg-font {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+@mixin medium-font {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+@mixin semibold-font {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+@mixin bold-font {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+@mixin plain-text {
+  @include reg-font();
+  font-size: 16px;
+  color: $darkestblue;
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
+}
+@mixin main-gradient {
+  background: linear-gradient(60deg, $lightestblue, $darkblue);
+}
+@mixin footer-gradient {
+  background: linear-gradient(90deg, $blue, $lightblue);
+}
+@mixin section-m {
+  margin-top: 110px;
+  @include media-breakpoint-down(md) {
+    margin-top: 60px;
+  }
+  @include media-breakpoint-down(sm) {
+    margin-top: 40px;
+  }
+}

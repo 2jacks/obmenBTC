@@ -1,0 +1,47 @@
+
+.slick {
+    /* Common class for arrows */
+    &-arrow {
+        //position: absolute;
+        //top: 50%;
+        //transform: translateY(50%);
+    
+        /* Clean default styles */
+        border: 0;
+        font-size: 0;
+        display: block;
+        width: 36px;
+        height: 36px;
+    }
+    &-prev {
+        background: url('../img/news/slider-arrow.svg');
+        margin-right: 30px;
+    }
+    &-next {
+        background: url('../img/news/slider-arrow.svg');
+        transform: rotate(180deg);
+    }
+
+
+    /* All dots wrapper */
+    &-dots {
+        list-style: none;
+
+        display: flex;
+        /* One dot wrapper */
+        li {
+            margin: 0 10px 0 0;
+            /* Decorating dots */
+            button {
+                font-size: 0;
+                border: 0;
+            
+                width: 8px;
+                height: 8px;
+                background-color: #C6CACC;
+                border-radius: 2px;
+            }
+        }
+    }
+
+}

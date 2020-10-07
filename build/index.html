@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="js/libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="js/libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+  <title>Обмен биточков</title>
+</head>
+
+<body>
+<header class="header">
+  <div class="container">
+	<div class="header__inner">
+	  <div class="burger burger--white js-burger ">
+		<span></span>
+	  </div>
+	  <a class="logo header__logo" href="index.html">ooo-obmen-BTC.com</a>
+	  <nav class="nav header__nav js-nav">
+		<div class="burger nav__burger js-nav-burger active">
+		  <span></span>
+		</div>
+		<a class="nav__link" href="#" data-scroll="#rate">Курс обмена</a>
+		<a class="nav__link" href="#" data-scroll="#reserve">Валюты</a>
+		<a class="nav__link" href="news.html">Новости</a>
+		<a class="nav__link" href="#" data-scroll="#map">Контакты</a>
+		<a class="nav__link" href="rules.html">Правила</a>
+		<a class="nav__link" href="#" data-scroll="#guaranties">Гарантии</a>
+	  </nav>
+	  <button class="user__btn header__user">
+		<svg class="user__icon">
+		  <use href="img/icons/icons.svg#user"></use>
+		</svg>
+	  </button>
+	</div>
+  </div>
+</header>
+<main class="main">
+  <section class="hero">
+	<div class="hero__bg-lg">
+	  <img alt="" src="img/hero/slice.svg">
+	</div>
+	<div class="hero__bg-sm">
+	  <img alt="" src="img/hero/slice-small.svg">
+	</div>
+	<div class="container">
+	  <div class="hero__inner">
+		<div class="hero__intro">
+		  <h1 class="hero__title">ooo-obmen-BTC.com</h1>
+		  <p class="hero__description">Сервис позволяет быстро обменять или купить Bitcoin, Ethereum, USDT с
+			банковской карты, или по безналу со счета юридических лиц ООО и ИП.</p>
+		  <button class="button button--trigger hero__button">Обменять</button>
+		</div>
+		<div class="hero__picture">
+		  <picture>
+			<source type="image/webp"
+					srcset="img/hero/picture-fg@2x.webp 1x, img/hero/picture-fg@2x.webp 2x, img/hero/picture-fg@3x.webp 3x">
+			<img src="img/hero/picture-fg.png" srcset="img/hero/picture-fg@2x.png 2x, img/hero/picture-fg@3x.png 3x"
+				 alt="">
+		  </picture>
+		</div>
+	  </div>
+	</div>
+  </section>
+  <section class="deal-type">
+	<div class="container">
+	  <div class="row">
+		<div class="col">
+		  <h2 class="section-header deal-type__header">Для начала сделки выберите тип услуги</h2>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="col-6 col-lg-3">
+		  <div class="deal-type__item deal-type-item">
+			<div class="deal-type-item__wrapper">
+			  <h3 class="deal-type-item__title">Продам криптовалюту используя карту</h3>
+			  <svg class="deal-type-item__icon">
+				<use href="img/icons/icons.svg#sell-card"></use>
+			  </svg>
+			  <button class="button deal-type-item__button">Выбрать</button>
+			</div>
+		  </div>
+		</div>
+		<div class="col-6 col-lg-3">
+		  <div class="deal-type__item deal-type-item">
+			<div class="deal-type-item__wrapper">
+			  <h3 class="deal-type-item__title">Куплю криптовалюту используя карту</h3>
+			  <svg class="deal-type-item__icon">
+				<use href="img/icons/icons.svg#buy-card"></use>
+			  </svg>
+			  <button class="button deal-type-item__button">Выбрать</button>
+			</div>
+		  </div>
+		</div>
+		<div class="col-6 col-lg-3">
+		  <div class="deal-type__item deal-type-item">
+			<div class="deal-type-item__wrapper">
+			  <h3 class="deal-type-item__title">Куплю криптовалюту за безналичный расчет</h3>
+			  <svg class="deal-type-item__icon">
+				<use href="img/icons/icons.svg#buy-cashless"></use>
+			  </svg>
+			  <button class="button deal-type-item__button">Выбрать</button>
+			</div>
+		  </div>
+		</div>
+		<div class="col-6 col-lg-3">
+		  <div class="deal-type__item deal-type-item">
+			<div class="deal-type-item__wrapper">
+			  <h3 class="deal-type-item__title">Продам криптовалюту за безналичный расчет</h3>
+			  <svg class="deal-type-item__icon">
+				<use href="img/icons/icons.svg#sell-cashless"></use>
+			  </svg>
+			  <button class="button deal-type-item__button">Выбрать</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  <section id="rate" class="rate">
+	<div class="container">
+	  <div class="row">
+		<div class="col-xl-5 col-md-12 offset-xl-0 offset-md-0 order-1 order-lg-0">
+		  <picture class="rate__picture">
+			<source type="image/webp"
+					srcset="img/rate/rate.webp 1x, img/rate/rate@2x.webp 2x, img/rate/rate@3x.webp 3x">
+			<img src="img/rate/rate.png" srcset="img/rate/rate@2x.png 2x, img/rate/rate@3x.png 3x" alt="" >
+		  </picture>
+		</div>
+		<div class="col-xl-6 col-md-12 offset-xl-1 offset-0 order-0 order-lg-1 mb-md-4">
+		  <div class="rate__rate">
+			<div class="rate__section rate__section--binance">
+			  <h2 class="section-header rate__header">Курс обмена Binance</h2>
+			  <div class="rate__wrapper">
+
+				<div class="rate-item rate-item--change rate-item--bitcoin rate__item">
+				  <div class="rate-item__info rate-item__info--bitcoin">
+					<h3 class="rate-item__currency rate-item__currency--bitcoin">Bitcoin</h3>
+					<span class="rate-item__num rate-item__num--rub">890 200</span>
+				  </div>
+				</div>
+
+				<div class="rate-item rate-item--change rate-item--ethereum rate__item">
+				  <div class="rate-item__info rate-item__info--ethereum">
+					<h3 class="rate-item__currency rate-item__currency--ethereum">Ethereum</h3>
+					<span class="rate-item__num rate-item__num--rub">31 803</span>
+				  </div>
+				</div>
+
+			  </div>
+			</div>
+
+			<div id="reserve" class="rate__section rate__section--reserve">
+			  <h2 class="section-header rate__header">Резерв валют</h2>
+			  <div class="rate__wrapper">
+
+				<div class="rate-item rate-item--reserve rate-item--bitcoin rate__item">
+				  <div class="rate-item__info rate-item__info--bitcoin">
+					<h3 class="rate-item__currency rate-item__currency--bitcoin">Bitcoin</h3>
+					<span class="rate-item__num rate-item__num--bitcoin">4.845</span>
+				  </div>
+				</div>
+
+				<div class="rate-item rate-item--reserve rate-item--ethereum rate__item">
+				  <div class="rate-item__info rate-item__info--ethereum">
+					<h3 class="rate-item__currency rate-item__currency--ethereum">Ethereum</h3>
+					<span class="rate-item__num rate-item__num--ethereum">25</span>
+				  </div>
+				</div>
+
+				<div class="rate-item rate-item--reserve rate-item--tether rate__item">
+				  <div class="rate-item__info rate-item__info--tether">
+					<h3 class="rate-item__currency rate-item__currency--tether">Tether</h3>
+					<span class="rate-item__num rate-item__num--tether">4023</span>
+				  </div>
+				</div>
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  <section class="procedure">
+	<div class="container">
+	  <div class="col-lg-10 offset-lg-1 col-12 offset-0">
+		<div class="row">
+		  <div class="col-lg-6 col-12">
+			<h2 class="section-header procedure__header">Для совершения сделки вам необходимо:</h2>
+			<div class="procedure__item">
+			  <span class="procedure__step">01</span>
+			  <p class="procedure__text">Выбрать валюту, которую хотите продать и ввести сумму.</p>
+			</div>
+			<div class="procedure__item">
+			  <span class="procedure__step">02</span>
+			  <p class="procedure__text">Выбрать валюту, которую хотите получить. Сумма подсчитается автоматически.</p>
+			</div>
+			<div class="procedure__item">
+			  <span class="procedure__step">03</span>
+			  <p class="procedure__text">Указать адрес своего кошелька или счета, на который хотите принять деньги.</p>
+			</div>
+
+		  </div>
+		  <div class="col-lg-6 col-12">
+			<div class="procedure__item">
+			  <span class="procedure__step">04</span>
+			  <p class="procedure__text">Укажите свой рабочий E-mail. Он нужен для совершения сделки.</p>
+			</div>
+			<div class="procedure__item">
+			  <span class="procedure__step">05</span>
+			  <p class="procedure__text">После создания заявки оператор вышлет
+				на вашу почту адрес с реквизитами для оплаты.</p>
+			</div>
+			<div class="procedure__item">
+			  <span class="procedure__step">06</span>
+			  <p class="procedure__text">После подтверждения оплаты деньги за вычетом сервисного сбора поступят на ваш
+				счет.</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  <section id="map" class="map">
+	<div class="container">
+	  <iframe
+	  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9216.212968370604!2d55.96875707492192!3d54.726278304293935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1601702619835!5m2!1sru!2sru" width="100%" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>	</div>
+  </section>
+  <section class="support">
+	<div class="container">
+	  <div class="row justify-content-center">
+		<div class="col-lg-3 col-md-4 col-sm">
+		  <h2 class="section-header support__header">Техподдержка</h2>
+		</div>
+	  </div>
+	  <div class="row justify-content-center">
+		<div class="col-lg-3 col-md-4 col-sm">
+		  <div class="support__trigger">Возникли вопросы? Ответим вам в течение 1 минуты.</div>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="col-lg-6 offset-lg-3 col-md-12 offset-md-0">
+		  <form class="support__form support-form">
+			<label class="support-form__label">
+			  <input class="support-form__input" placeholder="Не могу рассчитать..." type="text">
+			</label>
+			<button class="support-form__button" type="submit">
+			  <svg class="support-form__arrow">
+				<use href="img/icons/icons.svg#arrow-go"></use>
+			  </svg>
+			</button>
+		  </form>
+		</div>
+	  </div>
+	</div>
+  </section>
+  <section id="guaranties" class="guaranties">
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-3">
+		  <h2 class="section-header guaranties__header">Гарантии работы</h2>
+		</div>
+
+	  </div>
+	  <div class="row">
+		<div class="col-lg-5">
+		  <p class="guaranties__subtitle">О нас: кто мы такие, как долго работаем, сколько человек в штате, какими
+			балансами оперируем.
+			Приложены скрины или сертификаты, документы.</p>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="col-lg-3 col-sm-6 col-12 align-items-center">
+		  <div class="guaranties__certificates">
+			<picture>
+			  <source type="image/webp"
+					  srcset="img/certificates/certificate.webp 1x, img/certificates/certificate@2x.webp 2x, img/certificates/certificate@3x.webp 3x">
+			  <img alt="" src="img/certificates/certificate.jpg"
+				   srcset="img/certificates/certificate@2x.jpg 2x, img/certificates/certificate@3x.jpg 3x">
+			</picture>
+		  </div>
+		</div>
+		<div class="col-lg-3 col-sm-6 col-12 align-items-center">
+		  <div class="guaranties__certificates">
+			<picture>
+			  <source type="image/webp"
+					  srcset="img/certificates/certificate.webp 1x, img/certificates/certificate@2x.webp 2x, img/certificates/certificate@3x.webp 3x">
+			  <img alt="" src="img/certificates/certificate.jpg"
+				   srcset="img/certificates/certificate@2x.jpg 2x, img/certificates/certificate@3x.jpg 3x">
+			</picture>
+		  </div>
+		</div>
+		<div class="col-lg-3 col-sm-6 col-12 align-items-center">
+		  <div class="guaranties__certificates">
+			<picture>
+			  <source type="image/webp"
+					  srcset="img/certificates/certificate.webp 1x, img/certificates/certificate@2x.webp 2x, img/certificates/certificate@3x.webp 3x">
+			  <img alt="" src="img/certificates/certificate.jpg"
+				   srcset="img/certificates/certificate@2x.jpg 2x, img/certificates/certificate@3x.jpg 3x">
+			</picture>
+		  </div>
+		</div>
+		<div class="col-lg-3 col-sm-6 col-12 align-items-center">
+		  <div class="guaranties__certificates">
+			<picture>
+			  <source type="image/webp"
+					  srcset="img/certificates/certificate.webp 1x, img/certificates/certificate@2x.webp 2x, img/certificates/certificate@3x.webp 3x">
+			  <img alt="" src="img/certificates/certificate.jpg"
+				   srcset="img/certificates/certificate@2x.jpg 2x, img/certificates/certificate@3x.jpg 3x">
+			</picture>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+	<div class="row justify-content-center">
+		<nav class="nav nav--light footer__nav">
+		  <a class="nav__link" href="#" data-scroll="#rate">Курс обмена</a>
+		  <a class="nav__link" href="#" data-scroll="#reserve">Валюты</a>
+		  <a class="nav__link" href="news.html">Новости</a>
+		  <a class="nav__link" href="#" data-scroll="#map">Контакты</a>
+		  <a class="nav__link" href="rules.html">Правила</a>
+		  <a class="nav__link" href="#" data-scroll="#guaranties">Гарантии</a>
+		</nav>
+	</div>
+	<div class="footer__info">
+	  <a class="logo logo--light" href="">OOO-OBMEN-BTC.COM</a>
+	  <span class="copyright footer__copyright">&copy; Все права защищены 2020</span>
+	</div>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

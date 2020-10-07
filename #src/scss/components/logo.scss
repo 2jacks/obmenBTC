@@ -1,0 +1,17 @@
+.logo {
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-decoration: none;
+  @include reg-font();
+  font-size: 16px;
+  color: $darkestblue;
+
+  cursor: pointer;
+
+
+  position: relative;
+  &--light {
+    color: #fff;
+  }
+
+}

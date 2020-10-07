@@ -1,0 +1,84 @@
+.rules-page {
+  background: linear-gradient(0deg, rgba(13, 56, 126, 0.06), rgba(250, 250, 250, 0));
+
+}
+.rules {
+  &__header {
+    height: 230px;
+    width: 100%;
+    background: url("../img/rules/rules-bg.svg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+
+  }
+  &__header-inner {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 40px;
+  }
+
+  &__rules {
+    margin-top: 40px;
+  }
+  &__list {
+    list-style: none;
+    counter-reset: li;
+
+  }
+  &__item-text {
+    @include plain-text();
+  }
+  &__title {
+    @include semibold-font();
+    font-size: 18px;
+    color: $darkestblue;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  &__list-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    &:not(.rules__list-item--subitem) {
+      display: block;
+      margin-bottom: 30px;
+      .rules__item-text {
+        display: block;
+        margin-left: 5px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__item-text {
+    display: inline;
+  }
+  &__list-item:before {
+    display: inline;
+    counter-increment: li;
+    content: counters(li, '.') ". ";
+    @include semibold-font();
+    font-size: 18px;
+    color: $darkestblue;
+  }
+}
+.rule {
+  @include semibold-font();
+  font-size: 18px;
+  color: $darkestblue;
+  &__title {
+    display: inline-block;
+  }
+  &__text {
+    display: inline-block;
+    @include plain-text();
+  }
+  &--main {
+    margin-bottom: 30px;
+  }
+}
+
+

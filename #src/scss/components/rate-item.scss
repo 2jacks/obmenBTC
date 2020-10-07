@@ -1,0 +1,213 @@
+.rate-item {
+  display: flex;
+  align-items: center;
+
+  background-color: #fff;
+  padding: 26px 17px;
+  box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.1);
+  transition: box-shadow $transition;
+  &:hover {
+    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.25);
+  }
+
+  width: 48%;
+
+  margin-bottom: 15px;
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+  &--bitcoin {
+    &:before {
+      content: url("../img/rate/currency/bitcoin.svg");
+      display: block;
+      width: 46px;
+      height: 38px;
+
+      margin-right: 25px;
+    }
+  }
+  &--ethereum {
+    &:before {
+      content: url("../img/rate/currency/ethereum.svg");
+      display: block;
+      width: 46px;
+      height: 38px;
+
+      margin-right: 25px;
+    }
+  }
+  &--tether {
+    &:before {
+      content: url("../img/rate/currency/tether.svg");
+      display: block;
+      width: 46px;
+      height: 38px;
+
+      margin-right: 25px;
+    }
+  }
+
+
+  &--change {
+    .rate-item__info {
+      position: relative;
+      &--bitcoin {
+        &:before {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 2px;
+          background-color: $darkblue;
+
+          position: absolute;
+          left: 0;
+          top: -5px;
+        }
+      }
+
+      &--ethereum {
+        &:before {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 2px;
+          background-color: $lightestblue;
+
+          position: absolute;
+          left: 0;
+          top: -5px;
+        }
+      }
+    }
+
+    .rate-item__currency {
+      display: flex;
+      align-items: center;
+      &--bitcoin {
+        &:after {
+          content: '1 BTC';
+          @include reg-font();
+          font-size: 14px;
+          color: $darkestblue;
+          opacity: .5;
+
+          margin-left: 8px;
+        }
+      }
+      &--ethereum {
+        &:after {
+          content: '1 ETH';
+          @include reg-font();
+          font-size: 14px;
+          color: $darkestblue;
+          opacity: .5;
+
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+  &--reserve {
+    .rate-item__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .rate-item__currency {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &--bitcoin {
+        &:after {
+          content: 'BTC';
+          @include reg-font();
+          font-size: 14px;
+          color: $darkestblue;
+          opacity: .5;
+
+          margin-top: 3px;
+        }
+      }
+      &--ethereum {
+        &:after {
+          content: 'ETH';
+          @include reg-font();
+          font-size: 14px;
+          color: $darkestblue;
+          opacity: .5;
+
+          margin-top: 3px;
+        }
+      }
+      &--tether {
+        &:after {
+          content: 'USDT';
+          @include reg-font();
+          font-size: 14px;
+          color: $darkestblue;
+          opacity: .5;
+
+          margin-top: 3px;
+        }
+      }
+
+    }
+  }
+
+  &__currency {
+    @include reg-font();
+    font-size: 16px;
+    color: $darkestblue;
+  }
+  &__num {
+    @include medium-font();
+    font-size: 18px;
+    &--rub {
+      color: $darkblue;
+      &:after {
+        content: '\20BD';
+        @include medium-font();
+        font-size: 18px;
+        color: $darkblue;
+
+        margin-left: 5px;
+      }
+    }
+    &--bitcoin {
+      color: $darkblue;
+      &:after {
+        content: 'BTC';
+        @include medium-font();
+        font-size: 18px;
+        color: $darkblue;
+
+        margin-left: 5px;
+      }
+    }
+    &--ethereum {
+      color: $lightestblue;
+      &:after {
+        content: 'ETH';
+        @include medium-font();
+        font-size: 18px;
+        color: $lightestblue;
+
+        margin-left: 5px;
+      }
+    }
+    &--tether {
+      color: $darkestblue;
+      &:after {
+        content: 'USDT';
+        @include medium-font();
+        font-size: 18px;
+        color: $darkestblue;
+
+        margin-left: 5px;
+      }
+    }
+  }
+}

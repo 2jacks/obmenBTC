@@ -1,0 +1,25 @@
+.user {
+  &__btn {
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+
+    position: relative;
+
+    cursor: pointer;
+  }
+  &__icon {
+    display: block;
+    width: 15px;
+    height: 15px;
+    fill: $lightestblue;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,18 @@
+.button {
+  font-size: 16px;
+  border: none;
+
+  padding: 1.1em 0;
+  &--trigger {
+    @include medium-font();
+    color: #fff;
+
+    width: 300px;
+    @include main-gradient();
+    transition: background $transition;
+
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
